@@ -44,3 +44,6 @@
 
 ## IDEA-016 — U-channel spine
 **Why saved:** Upper/lower structural datums with printed stations and replaceable skins give a scalable, serviceable construction language across ÆSIR vehicles.
+
+## IDEA-017 — Sonobot 5
+**Why saved:** Commercial validation of a compact, portable twin-hull survey USV closely aligned with FISK. Mine its deployment, propulsion, battery, sonar and packaging choices while keeping ÆSIR's implementation open, modular, lower-cost and integrated with UAV/ROV/NOMAD assets.
