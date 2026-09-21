@@ -18,5 +18,6 @@
 | IDEA-014 | BeagleBone-class embedded controller | embedded Linux, I/O | robotics, test equipment | RAW |
 | IDEA-015 | Encoder feedback for mechanisms | sensing, motion-control | Cali-Eye rotary stage, robotics | INCORPORATED |
 | IDEA-016 | Modular U-channel spine + printed stations | structures, fabrication | ÆSIR airframes | INCORPORATED |
+| IDEA-017 | Sonobot 5 commercial USV benchmark | hydrography, sonar, modular USV | FISK, ISAR, integrated fleet | INVESTIGATE |
 
 Individual cards can be added as investigation progresses. This index is deliberately cross-project: the same technology may solve problems in several systems.
