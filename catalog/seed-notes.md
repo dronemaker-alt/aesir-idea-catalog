@@ -47,3 +47,7 @@
 
 ## IDEA-017 — Sonobot 5
 **Why saved:** Commercial validation of a compact, portable twin-hull survey USV closely aligned with FISK. Mine its deployment, propulsion, battery, sonar and packaging choices while keeping ÆSIR's implementation open, modular, lower-cost and integrated with UAV/ROV/NOMAD assets.
+
+
+## IDEA-018 — Project Quiver
+**Why saved:** Open-source ~25 kg-class heavy-lift UAV reference with modular/hot-swappable payload interfaces and unusually disciplined CAD/BOM/manufacturing documentation. Mine both the aircraft architecture and the repository/process structure for Sleipnir/Jotun/ÆSIR development; compare against the frozen ÆSIR structural baseline before adopting changes.
