@@ -21,5 +21,6 @@
 | IDEA-017 | Sonobot 5 commercial USV benchmark | hydrography, sonar, modular USV | FISK, ISAR, integrated fleet | INVESTIGATE |
 | IDEA-018 | Project Quiver open-source heavy-lift UAV reference | heavy-lift UAV, modular payloads, open hardware | Sleipnir, Jotun, ÆSIR UAV family | INVESTIGATE |
 | IDEA-019 | ARC-TOP recoverable water-column profiler | CTD, recoverable profiler, UAV/USV payload | Randy USV, Sleipnir, Sonarlogger | INVESTIGATE |
+| IDEA-020 | Handheld UAV commissioning & diagnostic terminal / transmitter backpack | RC, diagnostics, MAVLink, ELRS, retrofit HMI | field diagnostics, NOMAD, experimental transmitters | INVESTIGATE |
 
 Individual cards can be added as investigation progresses. This index is deliberately cross-project: the same technology may solve problems in several systems.
