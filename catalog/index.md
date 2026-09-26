@@ -23,6 +23,7 @@
 | IDEA-019 | ARC-TOP recoverable water-column profiler | CTD, recoverable profiler, UAV/USV payload | Randy USV, Sleipnir, Sonarlogger | INVESTIGATE |
 | IDEA-020 | Handheld UAV commissioning & diagnostic terminal / transmitter backpack | RC, diagnostics, MAVLink, ELRS, retrofit HMI | field diagnostics, NOMAD, experimental transmitters | INVESTIGATE |\n| IDEA-021 | DJI air-link characterization / ÆSIR COMSEC bench | RF characterization, protocol analysis, telemetry security | DJI test articles, transmitter backpack, VTX/FPV service tool, NOMAD | INVESTIGATE |
 | IDEA-022 | SwellPro SD4 amphibious/environmental UAV architecture reference | waterproofing, flotation, sealed avionics, modular propulsion, recovery | Jotun, Sleipnir, NOMAD, Randy USV | INVESTIGATE |
+| IDEA-023 | Amphibious tracked robot / track-as-propulsor reference | amphibious UGV, tracked mobility, water propulsion, shoreline transition | UGV family, Bayou, Randy USV, NOMAD | INVESTIGATE |
 
 Individual cards can be added as investigation progresses. This index is deliberately cross-project: the same technology may solve problems in several systems.
 
@@ -44,3 +45,10 @@ Project Quiver was authored late on 2026-09-22 CDT and committed on 2026-09-23 U
 | Idea / decision | Repository evidence | Source evidence | Affected ÆSIR projects | Current status | Next verification step |
 |---|---|---|---|---|---|
 | [IDEA-022 — SwellPro SD4 amphibious/environmental UAV architecture reference](IDEA-022-swellpro-sd4-amphibious-uav-reference.md): capture the architecture rather than clone the aircraft—sealed central equipment/flotation body with exposed, serviceable propulsion modules and recovery-oriented environmental design. | This commit adds the reference card, index entry, and dated provenance record. | [Eagle Eye Innovations discovery reel](https://www.instagram.com/reel/Ddq8ch5j0I0/); user screenshots and design conversation, 2026-09-24 | Jotun; Sleipnir; NOMAD field operations; Randy USV; sealed avionics/recovery modules | **INVESTIGATE** — architectural reference captured; no frozen ÆSIR airframe baseline change. | Verify SD4 construction, sealing strategy, flotation/recovery behavior, connector/payload interfaces, and serviceability; extract requirements for an ÆSIR sealed central pod and compare mass/CG/thermal penalties against the existing modular-spine baseline. |
+
+
+### 2026-09-26
+
+| Idea / decision | Repository evidence | Source evidence | Affected ÆSIR projects | Current status | Next verification step |
+|---|---|---|---|---|---|
+| [IDEA-023 — Amphibious tracked robot / track-as-propulsor reference](IDEA-023-amphibious-tracked-robot.md): investigate the visible deep-grouser track architecture as a possible dual-use terrestrial/water propulsor, with shoreline transition as the primary performance question. This is a reference, not a change to the Bayou or Randy USV baselines. | [Add reference card](https://github.com/dronemaker-alt/aesir-idea-catalog/commit/064fd593f74f01c9bb166565daea4a47dad1c732); this commit adds the index/provenance entry. | [Discovery reel](https://www.instagram.com/reel/DdwIrhOvvgV/); user screenshot and design conversation, 2026-09-26 | ÆSIR UGV family; Bayou conversion; Randy USV support systems; NOMAD; inspection payloads | **INVESTIGATE** — mechanism inferred from visible geometry; actual propulsion method not yet verified. | Verify whether the source robot uses tracks alone for water propulsion; then bench-test a small two-track model with interchangeable conventional and paddle/grouser tracks, measuring water speed/current and repeatable wet-ramp exit. |
