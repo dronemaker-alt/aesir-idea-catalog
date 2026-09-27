@@ -42,24 +42,65 @@ A smaller amphibious crawler could become a deployable daughter vehicle: USV tra
 
 The vehicle is a plausible carrier for offline autonomy, mesh communications, and Cali-Eye-derived visual inspection sensors in environments where a wheeled UGV or boat alone cannot reach the target.
 
-## First prototype hypothesis
+## Evidence and hypotheses
 
-Do not scale immediately to a full vehicle. Build a small inexpensive test article with two independent tracks, a sealed electronics enclosure, and interchangeable grouser/paddle geometries.
+### Directly evidenced by the source material
 
-Compare conventional and paddle-track configurations for:
+- The depicted machine is a compact tracked robot operating at a pool edge/in water.
+- Its visible track shoes have unusually deep, paddle-like grousers.
 
-1. water speed and steering authority;
-2. electrical power/current at equal commanded track speed;
-3. static and dynamic stability;
-4. ability to enter and exit water over a wet ramp;
-5. mud/debris retention and track shedding;
-6. propulsion performance versus grouser height, pitch, and track velocity.
+The source material does **not** establish that the tracks are the only water propulsors, quantify water speed or power, or demonstrate repeated unassisted shoreline exits.
 
-The key success metric is **reliable shoreline transition**, not maximum swimming speed.
+### Hypotheses to test
+
+- **H1 — water propulsion:** At the same commanded track speed, deep-grouser tracks produce materially greater forward water speed than conventional tracks without a disproportionate electrical-power penalty.
+- **H2 — shoreline exit:** Deep-grouser tracks increase the probability of an unassisted exit from water onto a repeatable wet ramp.
+- **H3 — tradeoff:** Any gain is large enough to justify added current, splash, steering effects, debris retention, and mechanical load.
+
+## Smallest decisive A/B test
+
+Use one small, positively buoyant, two-track differential-drive rig. Change **only** the interchangeable track set:
+
+- **A — control:** conventional low-profile track shoes;
+- **B — candidate:** deep paddle/grouser shoes of the same track width, pitch, material, and link count where practical.
+
+Keep the hull, mass, ballast/CG, buoyancy, motors, reduction, battery, controller limits, track tension, software, commanded track speed, ramp, water depth, and start position unchanged. Record actual unloaded track speed for both sets; if geometry changes effective speed, report it rather than compensating silently.
+
+### Test 1 — useful water propulsion
+
+Run each track set in calm water from the same floating start line, with both tracks commanded straight ahead at one fixed setting. Perform at least five valid runs per configuration and alternate A/B order.
+
+Measure:
+
+1. time and distance over a marked water course; report median forward speed and run-to-run spread;
+2. battery voltage and total current; report median electrical power and energy per metre;
+3. heading change over the course as a basic straight-line/steering-authority check;
+4. whether motion is sustained and controllable, rather than a brief launch effect.
+
+**Water-propulsion gate:** B passes only if its median speed is at least **50% greater than A**, every B run completes under control, and B's median energy per metre is no more than **2× A**. If A cannot complete the course, B must complete all five runs and achieve at least **0.15 m/s** median speed. These are screening thresholds, not vehicle requirements.
+
+### Test 2 — repeatable shoreline exit
+
+Use one rigid ramp with a fixed slope and repeatable wet surface. Start floating square to the ramp at a marked distance, apply one fixed straight-ahead command, and allow no manual correction or assistance. Perform ten attempts per track set, alternating A/B; re-wet and inspect the ramp between attempts.
+
+Measure:
+
+1. successful exits out of ten, where the entire rig reaches the dry-side finish mark under its own power;
+2. time from first ramp contact to the finish mark;
+3. peak current and any controller limit, stall, thrown track, rollover, or high-centering;
+4. failure location/mode from fixed-camera video.
+
+**Shoreline-exit gate:** B passes only if it completes at least **8/10** exits and improves on A by at least **3 successful exits**, with no rollover, thrown track, or repeated over-current shutdown. If both configurations score 8/10 or better, the deep grousers have not shown a decisive transition advantage on this rig.
+
+### Decision rule
+
+The concept clears this first screen only if B passes **both** gates. A mixed result remains **INVESTIGATE** and should drive one narrowly targeted follow-up (for example ramp texture, grouser height, or buoyancy/CG), not a larger vehicle build. Failure of both gates rejects this tested geometry, not all possible track-as-propulsor designs.
+
+The primary result is repeatable shoreline transition; maximum swimming speed is secondary.
 
 ## Decision boundary
 
-No ÆSIR vehicle baseline changes from this reference. Promote from **INVESTIGATE** only after the reel's propulsion method is verified or an ÆSIR bench model independently demonstrates useful track-driven water propulsion and repeatable water exit.
+No ÆSIR vehicle baseline changes from this reference. The electric Bayou conversion and Randy USV twin-waterjet direction remain unchanged. Keep IDEA-023 at **INVESTIGATE** through this screening test; any later promotion requires review of the recorded results and a separate decision.
 
 ## Tags
 
