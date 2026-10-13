@@ -27,6 +27,8 @@
 | IDEA-024 | Portable Cali Core / docked embodiment architecture | local AI, offline inference, portable compute, capability manifests | NOMAD, Cali-Eye, Grimhild, UAV ground station | CONCEPT |
 | IDEA-025 | Vicharak AXON RK3588 edge-compute reference | edge AI, machine vision, embedded Linux, heterogeneous compute | Cali-Eye, NOMAD, UAV ground station, Portable Cali docks | INVESTIGATE |
 
+| IDEA-026 | [Cali-Bot V1 / Cali-Quad Echo voice interface](IDEA-026-cali-bot-v1-voice-interface.md) | voice HMI, offline speech, robotic embodiment | Cali-Bot V1, Portable Cali Core, NOMAD | INVESTIGATE |
+
 Individual cards can be added as investigation progresses. This index is deliberately cross-project: the same technology may solve problems in several systems.
 
 ## Provenance / Decision Log
@@ -68,3 +70,10 @@ Project Quiver was authored late on 2026-09-22 CDT and committed on 2026-09-23 U
 
 
 | [IDEA-025 — Vicharak AXON RK3588 edge-compute reference](IDEA-025-vicharak-axon-rk3588-edge-compute-reference.md): retain the compact, interface-dense board as a Cali-Eye/NOMAD/ground-station reference and possible secondary Portable Cali host; do not promote it into an approved architecture from headline specifications. | [Reference card with provenance](https://github.com/dronemaker-alt/aesir-idea-catalog/commit/f195a7f28df281fb35bc712cc5239670bce53ee0); this index/provenance update. | [Discovery reel](https://www.instagram.com/reel/DdvsTyEBSKp/); user screenshots and design conversation, 2026-09-27 CDT; [Vicharak AXON documentation](https://docs.vicharak.in/vicharak_sbcs/axon/axon-home/). | Cali-Eye; NOMAD; UAV ground station; Portable Cali docks; ÆSIR lab vision systems | **INVESTIGATE** — Vicharak/India board design and Rockchip/China RK3588 are recorded; the supporting component chain, firmware/update trust, exact configuration, power, performance and compliance evidence remain open. No ÆSIR compute or US-sourced baseline is changed. | Freeze the current Vicharak pinout/BSP documentation and create an MPN-level provenance table for the RK3588, wireless module, storage, Ethernet PHY, boot/update chain and NPU runtime; only then consider one camera → inference → logged-result Cali-Eye bench test. |
+
+
+### 2026-10-13
+
+| Idea / decision | Source evidence | Status / next verification |
+|---|---|---|
+| [IDEA-026 — Cali-Bot V1 voice integration](IDEA-026-cali-bot-v1-voice-interface.md): investigate repurposing the existing spherical Echo on the previously acquired quadruped as a local Cali voice terminal, without splitting Cali-Quad into a new project. | Owner-supplied photos and design-intent discussion, 2026-10-13 CDT; [EchoMuse discovery reel](https://www.instagram.com/reel/DeU_t32DJOx/). Image binaries remain in the conversation, not in Git. | **INVESTIGATE** — identify sphere generation and quadruped controller; verify supported firmware and local speech path before motion integration. |
