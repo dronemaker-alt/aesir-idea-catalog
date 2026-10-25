@@ -86,3 +86,4 @@ Operational milestones are distinct from idea cards: evidence-backed demonstrati
 | Date | Milestone | Verified scope | Next gate |
 |---|---|---|---|
 | 2026-10-24 | [First Æsir local AI compute node and three-node commissioning](milestones/MILESTONE-2026-10-24-first-local-ai-compute-node.md) | Recommissioned OptiPlex; Linux Mint; authenticated SSH chain; XRDP; 20-PDF path manifest task; Qwen3 0.6B CPU-only reply; separately verified eSpeak speech | Read-only document-content librarian proof of concept; local LLM-to-TTS integration; measured inference benchmark |
+| 2026-10-24 | [Human–AI collaborative systems engineering](milestones/MILESTONE-2026-10-24-human-ai-engineering-collaboration.md) | Owner-executed, AI-guided troubleshooting loop across hardware recovery, SSH, XRDP, archive manifest, local inference, and TTS; qualitative acceleration observed, not quantitatively benchmarked | Repeat method with timed evidence logs and a read-only librarian assignment |
