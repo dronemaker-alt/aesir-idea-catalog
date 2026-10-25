@@ -77,3 +77,12 @@ Project Quiver was authored late on 2026-09-22 CDT and committed on 2026-09-23 U
 | Idea / decision | Source evidence | Status / next verification |
 |---|---|---|
 | [IDEA-026 — Cali-Bot V1 voice integration](IDEA-026-cali-bot-v1-voice-interface.md): investigate repurposing the existing spherical Echo on the previously acquired quadruped as a local Cali voice terminal, without splitting Cali-Quad into a new project. | Owner-supplied photos and design-intent discussion, 2026-10-13 CDT; [EchoMuse discovery reel](https://www.instagram.com/reel/DeU_t32DJOx/). Image binaries remain in the conversation, not in Git. | **INVESTIGATE** — identify sphere generation and quadruped controller; verify supported firmware and local speech path before motion integration. |
+
+
+## Verified Operational Milestones
+
+Operational milestones are distinct from idea cards: evidence-backed demonstrations, with limitations and next tests clearly identified.
+
+| Date | Milestone | Verified scope | Next gate |
+|---|---|---|---|
+| 2026-10-24 | [First Æsir local AI compute node and three-node commissioning](milestones/MILESTONE-2026-10-24-first-local-ai-compute-node.md) | Recommissioned OptiPlex; Linux Mint; authenticated SSH chain; XRDP; 20-PDF path manifest task; Qwen3 0.6B CPU-only reply; separately verified eSpeak speech | Read-only document-content librarian proof of concept; local LLM-to-TTS integration; measured inference benchmark |
