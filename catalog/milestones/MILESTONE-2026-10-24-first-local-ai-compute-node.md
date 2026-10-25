@@ -73,6 +73,9 @@ The 20 paths were grouped by immediate parent directory; these are *folder names
 
 ## Engineering interpretation
 
+**Companion engineering-method record:** [2026-10-24 human–AI collaborative systems engineering](MILESTONE-2026-10-24-human-ai-engineering-collaboration.md). This separately documents the owner-led, AI-assisted troubleshooting loop, responsibilities, qualitative productivity observation, and next verification method.
+
+
 This milestone demonstrates owner-led multidisciplinary **systems integration, hardware recovery, Linux commissioning, networking, remote administration, task delegation, and local AI proof-of-concept validation** on low-cost repurposed hardware. It does not claim invention of a new distributed-computing method, completion of a general AI assistant, or proven commercial viability.
 
 ## Portfolio / CV phrasing (bounded to observed results)
